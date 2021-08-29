@@ -50,33 +50,34 @@ class _MyHomePageState extends State<MyHomePage> {
               const SizedBox(
                 height: 30,
               ),
-              Text(
-                "Liquidity Baking DEX -> ${d.latest.liquidityBalance} Mutez (${d.latest.liquidityBalanceInTez} Tez)",
-                style: const TextStyle(
-                  fontSize: 24,
-                ),
-              ),
-              const SizedBox(
-                height: 5,
-              ),
-              Text(
-                "Liquidity Baking LT -> ${d.latest.liquiditySupply} supply",
-                style: const TextStyle(
-                  fontSize: 24,
-                ),
-              ),
-              const SizedBox(
-                height: 5,
-              ),
-              Text("TVL ${d.latest.tvl}",
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  "Liquidity Baking DEX -> ${d.latest.liquidityBalance} Mutez (${d.latest.liquidityBalanceInTez} Tez)",
                   style: const TextStyle(
-                    fontSize: 29,
-                  )),
-
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  "Liquidity Baking LT -> ${d.latest.liquiditySupply} supply",
+                  style: const TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text("TVL ${d.latest.tvl}",
+                    style: const TextStyle(
+                      fontSize: 29,
+                    )),
+              ),
               const SizedBox(
                 height: 10,
               ),
-
               // LineGraph(features: , size: const Size(400,400)),
             ],
           ),
