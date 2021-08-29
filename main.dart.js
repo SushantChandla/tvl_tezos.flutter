@@ -53205,7 +53205,7 @@ $S:338}
 F.r5.prototype={
 aV(){return new F.FW(C.n)}}
 F.FW.prototype={
-a0(a,b){var s=null,r=Y.agu(b,t.zw),q=M.agE(s,s,new L.pf("assets/tezos_logo.gif",s,s)),p=t.fQ,o=S.a3s(H.b([C.wN,S.a3r(L.a4N(""+r.a.a+" Mutez ("+H.d(r.a.a/1e6)+" Tez",s,s,s))],p)),n=S.a3s(H.b([C.wO,S.a3r(L.a4N(""+r.a.b+" supply",s,s,s))],p)),m=r.a
+a0(a,b){var s=null,r=Y.agu(b,t.zw),q=M.agE(s,s,new L.pf("assets/tezos_logo.gif",s,s)),p=t.fQ,o=S.a3s(H.b([C.wN,S.a3r(L.a4N(""+r.a.a+" Mutez ("+H.d(r.a.a/1e6)+" Tez)",s,s,s))],p)),n=S.a3s(H.b([C.wO,S.a3r(L.a4N(""+r.a.b+" supply",s,s,s))],p)),m=r.a
 p=H.b([C.DD,new U.mw(q,100,s),C.DC,new S.y0(C.iP,H.b([o,n,S.a3s(H.b([C.wM,S.a3r(L.a4N(H.d(m.a*2/m.b),s,s,s))],p))],t.xy),S.aep(C.iP),s),C.DB],t.p)
 return new M.tb(T.KS(new E.BS(!0,new T.xP(C.x,C.nS,C.fF,C.eZ,s,C.hd,s,p,s),s),s,s),s)}}
 G.hR.prototype={
