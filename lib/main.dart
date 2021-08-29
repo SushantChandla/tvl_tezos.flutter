@@ -69,7 +69,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     cells: <DataCell>[
                       const DataCell(Text('Liquidity Baking DEX')),
                       DataCell(Text(
-                          '${d.latest.liquidityBalance} Mutez (${d.latest.liquidityBalanceInTez} Tez')),
+                          '${d.latest.liquidityBalance} Mutez (${d.latest.liquidityBalanceInTez} Tez)')),
                     ],
                   ),
                   DataRow(
