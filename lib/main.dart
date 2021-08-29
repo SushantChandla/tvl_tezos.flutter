@@ -50,31 +50,43 @@ class _MyHomePageState extends State<MyHomePage> {
               const SizedBox(
                 height: 30,
               ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Text(
-                  "Liquidity Baking DEX -> ${d.latest.liquidityBalance} Mutez (${d.latest.liquidityBalanceInTez} Tez)",
-                  style: const TextStyle(
-                    fontSize: 24,
+
+              DataTable(
+                columns: const <DataColumn>[
+                  DataColumn(
+                    label: Text(
+                      'Name',
+                    ),
                   ),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Text(
-                  "Liquidity Baking LT -> ${d.latest.liquiditySupply} supply",
-                  style: const TextStyle(
-                    fontSize: 24,
+                  DataColumn(
+                    label: Text(
+                      'Value',
+                    ),
                   ),
-                ),
+                ],
+                rows: <DataRow>[
+                  DataRow(
+                    cells: <DataCell>[
+                      const DataCell(Text('Liquidity Baking DEX')),
+                      DataCell(Text(
+                          '${d.latest.liquidityBalance} Mutez (${d.latest.liquidityBalanceInTez} Tez')),
+                    ],
+                  ),
+                  DataRow(
+                    cells: <DataCell>[
+                      const DataCell(Text('Liquidity Baking LT')),
+                      DataCell(Text('${d.latest.liquiditySupply} supply')),
+                    ],
+                  ),
+                  DataRow(
+                    cells: <DataCell>[
+                      const DataCell(Text('TVL')),
+                      DataCell(Text('${d.latest.tvl}')),
+                    ],
+                  ),
+                ],
               ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Text("TVL ${d.latest.tvl}",
-                    style: const TextStyle(
-                      fontSize: 29,
-                    )),
-              ),
+
               const SizedBox(
                 height: 10,
               ),
