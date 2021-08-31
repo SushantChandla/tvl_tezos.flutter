@@ -44,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: 50,
               ),
               Image.asset(
-                'assets/tezos_logo.gif',
+                'assets/tezos-xtz-logo.png',
                 height: 100,
               ),
               const SizedBox(
@@ -74,14 +74,21 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   DataRow(
                     cells: <DataCell>[
+                      const DataCell(Text('Liquidity Baking DEX * 2')),
+                      DataCell(Text(
+                          '${d.latest.liquidityBalance*2} Mutez (${d.latest.liquidityBalanceInTez*2} Tez)')),
+                    ],
+                  ),
+                  DataRow(
+                    cells: <DataCell>[
                       const DataCell(Text('Liquidity Baking LT')),
                       DataCell(Text('${d.latest.liquiditySupply} supply')),
                     ],
                   ),
                   DataRow(
                     cells: <DataCell>[
-                      const DataCell(Text('TVL')),
-                      DataCell(Text('${d.latest.tvl}')),
+                      const DataCell(Text('Ratio')),
+                      DataCell(Text('${d.latest.tvl}',style:const TextStyle(fontSize: 30),)),
                     ],
                   ),
                 ],
