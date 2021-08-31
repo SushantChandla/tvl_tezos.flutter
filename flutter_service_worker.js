@@ -4,9 +4,9 @@ const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "version.json": "012ffc982e63867da4e7b6f1324039f6",
-"index.html": "0e762b4935ea495cbcecec0198cf41f8",
-"/": "0e762b4935ea495cbcecec0198cf41f8",
-"main.dart.js": "a83de0cce405ca0d1ce79d8ecf54a09d",
+"index.html": "00cc8bb484ba7f45638b3097bb03d6d2",
+"/": "00cc8bb484ba7f45638b3097bb03d6d2",
+"main.dart.js": "17908dea121f7e21e1db9184c4e80ffa",
 "index.css": "aa7658adb08e43c3188279acdfc73efd",
 "favicon.png": "23df46938660b15572c8b6186aa2cc8e",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
@@ -14,10 +14,11 @@ const RESOURCES = {
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "manifest.json": "7b7fa7eaade2e1bb256953f2a710756e",
-"assets/AssetManifest.json": "2d4fd341f5998586508d308e507576ea",
+"assets/AssetManifest.json": "a7da0bc2e9e71f032366f312a3100348",
 "assets/NOTICES": "3ba8cae525fd345e0c8235d54d836531",
 "assets/FontManifest.json": "7b2a36307916a9721811788013e65289",
 "assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
+"assets/assets/tezos-xtz-logo.png": "de51452e539ec6f698db16baa2252afe",
 "assets/assets/tezos_logo.gif": "a0bd680f1f87a145c39610d7687706cc"
 };
 
