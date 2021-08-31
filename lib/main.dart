@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (_) => MainApp(),
       child: MaterialApp(
-        title: 'TVl',
+        title: 'Tezos',
         theme: ThemeData.dark(),
         home: const MyHomePage(),
       ),
@@ -76,7 +76,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     cells: <DataCell>[
                       const DataCell(Text('Liquidity Baking DEX * 2')),
                       DataCell(Text(
-                          '${d.latest.liquidityBalance*2} Mutez (${d.latest.liquidityBalanceInTez*2} Tez)')),
+                          '${d.latest.liquidityBalance * 2} Mutez (${d.latest.liquidityBalanceInTez * 2} Tez)')),
                     ],
                   ),
                   DataRow(
@@ -88,7 +88,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   DataRow(
                     cells: <DataCell>[
                       const DataCell(Text('Ratio')),
-                      DataCell(Text('${d.latest.tvl}',style:const TextStyle(fontSize: 30),)),
+                      DataCell(Text(
+                        '${d.latest.tvl}',
+                        style: const TextStyle(fontSize: 30),
+                      )),
                     ],
                   ),
                 ],
